@@ -21,9 +21,20 @@ namespace OperationLibrary
             int molt = a * b;
             return molt;
         }
-        public static double divisione (int a,int b)
+        public static double divisione (double a,double b)
         {
-            double dividi=
+          
+          if (b==0)
+          {
+                return double.NaN;
+          }
+          else
+          {
+                double dividi = a / b;
+                return dividi;
+          }
+
+           
         }
     }
 }
